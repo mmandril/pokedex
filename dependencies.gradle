@@ -37,5 +37,8 @@ ext.versions = [
         lifecycleVersion     : '2.2.0',
 
         // Navigation
-        navVersion           : "2.3.3"
+        navVersion           : "2.3.3",
+
+        // Mockk
+        mockkVersion : "1.10.6"
 ]
