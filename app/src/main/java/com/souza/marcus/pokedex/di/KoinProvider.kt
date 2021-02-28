@@ -1,6 +1,7 @@
 package com.souza.marcus.pokedex.di
 
 import androidx.multidex.MultiDexApplication
+import com.souza.marcus.pokedex.features.home.di.HomeModule
 import com.souza.marcus.pokedex.remotedata.di.RemoteDataModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -13,5 +14,6 @@ internal object KoinProvider {
         androidContext(application)
 
         RemoteDataModule.load()
+        HomeModule.load()
     }
 }
