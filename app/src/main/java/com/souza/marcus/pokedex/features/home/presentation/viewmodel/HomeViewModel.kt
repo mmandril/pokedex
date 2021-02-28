@@ -46,7 +46,9 @@ internal class HomeViewModel(
     private fun handleError(error: Throwable) {
         _homeViewStateLiveData.value = homeViewState.copy(
             isLoading = false,
-            isError = true
+            isError = true,
+            isEmpty = true,
+            pokemonList = emptyList()
         )
     }
 
