@@ -1,8 +1,7 @@
-package com.souza.marcus.pokedex.features.home.mapper
+package com.souza.marcus.pokedex.features.home.domain.mapper
 
 import com.souza.marcus.pokedex.features.home.data.remote.model.PokemonListResponse
 import com.souza.marcus.pokedex.features.home.data.remote.model.PokemonResponse
-import com.souza.marcus.pokedex.features.home.domain.mapper.PokemonMapper
 import com.souza.marcus.pokedex.features.home.domain.mapper.impl.PokemonMapperImpl
 import io.mockk.MockKAnnotations
 import io.mockk.every
@@ -14,11 +13,6 @@ import kotlin.test.assertNotNull
 internal class PokemonMapperTest {
 
     private val pokemonMapper: PokemonMapper = PokemonMapperImpl()
-
-    @Before
-    fun setup() {
-        MockKAnnotations.init(this)
-    }
 
     @Test
     fun `should return list of Pokemon from mapper`() {
