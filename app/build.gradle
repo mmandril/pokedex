@@ -22,7 +22,7 @@ android {
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField "String", "BASE_URL", "\"hhttps://pokeapi.co\""
+        buildConfigField "String", "BASE_URL", "\"https://pokeapi.co/api/v2/\""
     }
 
     buildTypes {
@@ -56,6 +56,7 @@ dependencies {
     //Moshi
     implementation "com.squareup.moshi:moshi-kotlin:$versions.moshiVersion"
     implementation "com.squareup.retrofit2:converter-moshi:$versions.moshiConverterVersion"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$versions.moshiVersion"
 
     // Network
     implementation "com.squareup.retrofit2:retrofit:$versions.retrofitVersion"
