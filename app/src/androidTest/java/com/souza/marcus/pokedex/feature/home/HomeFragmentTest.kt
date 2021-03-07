@@ -2,6 +2,7 @@ package com.souza.marcus.pokedex.feature.home
 
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.souza.marcus.pokedex.R
 import com.souza.marcus.pokedex.feature.home.robot.HomeRobot
 import com.souza.marcus.pokedex.feature.home.robot.MockRobot
 import com.souza.marcus.pokedex.features.home.presentation.fragment.HomeFragment
@@ -17,7 +18,7 @@ internal class HomeFragmentTest {
 
     @Before
     fun setup() {
-        launchFragmentInContainer<HomeFragment>()
+        launchFragmentInContainer<HomeFragment>(themeResId = R.style.Pokedex)
     }
 
     @Test
