@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.souza.marcus.pokedex">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".PokeDexApp"
         android:allowBackup="true"
