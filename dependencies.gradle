@@ -40,5 +40,8 @@ ext.versions = [
         navVersion           : "2.3.3",
 
         // Mockk
-        mockkVersion : "1.10.6"
+        mockkVersion         : "1.10.6",
+
+        // Fragment Version
+        fragmentVersion      : "1.2.5"
 ]
