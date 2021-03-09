@@ -1,7 +1,7 @@
 <h1 align="center">Pokedex</h1>
 
 <p align="center">  
-This project was create for a job challenge.<br>The project architeture is MVVM, using a fells design patters, like UseCases, Repositories and DataSources.<br> It's also fetching data from network
+This project was create for a job challenge.<br>The project architecture is MVVM, using a fells design patters, like UseCases, Repositories and DataSources.<br> It's also fetching data from network.
 </p>
 </br>
 
